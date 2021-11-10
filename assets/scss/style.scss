@@ -1,0 +1,29 @@
+section{
+    width: 800px;
+    height: 800px;
+    display: grid;
+    place-items: center;
+
+    div{
+        width: 150px;
+        height: 150px;
+        background-color: purple;
+        border-radius: 20px;
+        animation: rotate 2s ease-in-out alternate infinite;
+        transform-origin: 0% 0%;
+    }
+}
+
+
+@keyframes rotate {
+
+    from{
+        transform: scaleX(100%) scaleY(100%) rotate(0);
+        background-image: linear-gradient(green, blue);
+    }
+
+    to{
+    transform: scaleX(200%) scaleY(200%) rotate(720deg);
+    background-image: linear-gradient(purple, red);
+    }
+}
